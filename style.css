@@ -56,11 +56,15 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+button {
+    margin-left: 4em;
+}
+
 h1 + p {
     margin-top: 100px;
 }
 
-p + h2, ul + h2 {
+p + h2, ul + h2, table + h2 {
     margin-top: 70px;
 }
 
@@ -69,10 +73,19 @@ p + footer {
 }
 
 table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 2em;
     border-spacing: 10px;
 }
 
 td:first-child {
     width: 350px; /* set width of first column */
+}
+
+td:nth-child(2) {
+    min-width: 60px; /* set width of second column */
+}
+
+td:nth-child(3) {
+    width: 90px; /* set width of second column */
 }
